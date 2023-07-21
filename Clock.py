@@ -4,6 +4,7 @@ from time import strftime
 
 root = Tk()
 root.title("Python Clock")
+root.configure(bg='red')
 
 def time():
     string = strftime('%H:%M:%S %p')
@@ -14,7 +15,7 @@ def time():
 
 label = Label(root, text="Clock:")
 label.pack(anchor='center')
-lbl = Label(root, font=('calbri', 40, 'bold'), background='purple')
+lbl = Label(root, font=('calbri', 40, 'bold'), background='purple', foreground='white')
 lbl.pack(anchor='center')
 label2 = Label(root, text="Date:")
 label2.pack(anchor='center')
